@@ -6,9 +6,17 @@
   "volta": {
     "node": "17.9.1"
   },
+  "script": {
+    "build": "rimraf dist && swc ./src -d dist"
+  },
   "dependencies": {
     "@tsconfig/node16": "^1.0.3",
     "@types/node": "^18.11.18",
     "typescript": "^4.9.4"
+  },
+  "devDependencies": {
+    "@swc/cli": "^0.1.59",
+    "@swc/core": "^1.3.29",
+    "rimraf": "^4.1.2"
   }
 }

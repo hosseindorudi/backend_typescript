@@ -6,8 +6,9 @@
   "volta": {
     "node": "17.9.1"
   },
-  "script": {
-    "build": "rimraf dist && swc ./src -d dist"
+  "scripts": {
+    "build": "rimraf dist && swc ./src -d dist",
+    "start": "node dist/index.js"
   },
   "dependencies": {
     "@tsconfig/node16": "^1.0.3",
